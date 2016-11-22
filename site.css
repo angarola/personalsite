@@ -9,6 +9,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     padding: 7% 10%;
+    height: 100%;
 }
 
 .header {
@@ -26,9 +27,19 @@ body {
 }
 
 .header-links {
-    float: right;
     font-size: 1.5em;
-    vertical-align: middle;
+}
+
+#resume {
+    float: left;
+}
+
+#portfolio {
+    padding-left: 33.33%;
+}
+
+#contact {
+    float: right;
 }
 
 a {
@@ -39,14 +50,14 @@ a {
 
 a:link, a:visited {
  border:none;
- text-decoration:underline;
+ text-decoration:none;
  font-style:normal;
  color:black;
 }
 
 a:hover {
- text-decoration: none;
- color: #a3211f;
+ text-decoration: underline;
+ color: #bfbfbf;
 }
 
 

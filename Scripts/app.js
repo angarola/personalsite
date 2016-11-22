@@ -7,6 +7,6 @@
     .when("/", {
         templateUrl : "main.html"})
     .when("/Portfolio", {
-        templateUrl : "Portfolio.html"})
+        templateUrl : "/Users/michaelangarola/Desktop/Personal Site/Views/Portfolio.html"})
     })
 })();
