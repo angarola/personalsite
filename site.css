@@ -27,13 +27,42 @@ body {
     display: block;
 }
 
-.header-links a{
-    color: red;
-}
+.header-links a {
+
+ }
 
 .header-links{
     font-size: 1.4em;
     margin: .5em 0;
+    text-align: center;
+}
+
+.navBurg {
+    display: none;
+}
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: black;
+  margin-top: 4px;
+}
+
+@media (max-width: 767px){
+ .header-links {
+     display: none;
+ }
+
+ .navBurg {
+     display: block;
+ }
+
+}
+
+#portfolio {
+    margin: 0 15%;
 }
 
 .main-portfolio {
@@ -62,13 +91,26 @@ a:hover {
  color: #bfbfbf;
 }
 
+ul {
+    background-color: #f3f3f3;
+    border-width: 2px;
+    border-color: #f3f3f3;
+    border-style: solid;
+}
+
+li {
+    display: block;
+    margin: 5px;
+    font-size: 1.5em;
+    background-color: #fff
+}
+
+li:nth-child(even) { 
+    background: #f3f3f3; 
+}
 
 @media (max-width: 1015px){
     .main{
         margin: 0;
     }
-}
-
-@media (max-width: 767px){
-    
 }

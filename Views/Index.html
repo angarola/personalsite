@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/Users/michaelangarola/Desktop/Personal Site/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/Users/michaelangarola/Desktop/Personal Site/site.css">
-
+     <!--coded by hand, no bootstrap-->
     <title>Michael Angarola</title>
   </head>
 <body>
@@ -19,10 +19,22 @@
   </div>
 
 <div class="header-links">
-         <a href="https://drive.google.com/open?id=0B9bg68vL_BAjV3VEMjB0VzBlOVk" id="resume">Resume</a>
-        <a href="#portfolio" id="portfolio">Portfolio</a>
-       <a href="#contact" id="contact">Contact</a>
+      <a href="https://drive.google.com/open?id=0B9bg68vL_BAjV3VEMjB0VzBlOVk" id="resume">Resume</a>
+      <a href="#portfolio" id="portfolio">Portfolio</a>
+      <a href="#contact" id="contact">Contact</a>
 </div>
+<div class="navBurg" ng-click="nav()">
+<div class="icon-bar"></div>
+<div class="icon-bar"></div>
+<div class="icon-bar"></div>
+</div>
+<nav ng-if="navHide">
+  <ul>
+      <li><a href="https://drive.google.com/open?id=0B9bg68vL_BAjV3VEMjB0VzBlOVk">Resume</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
   <div ng-view></div>
 </div>
@@ -55,7 +67,16 @@ fdsfsd
           templateUrl : "/templates/contact.html"})
       });
     app.controller('mainController', function($scope){
-      $scope.message = "hello world"
+      $scope.navHide = false;
+
+      $scope.nav = function () {
+        if ($scope.navHide == true) {
+          $scope.navHide = false
+        }
+        else {
+          $scope.navHide = true;
+        }
+      };
     });
   })();
 </script>
