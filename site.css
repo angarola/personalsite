@@ -2,6 +2,7 @@ body {
     background-color: #f3f3f3;
     display: block;
     margin: 0px;
+    height: 95vh;
 }
 
 .main {
@@ -9,7 +10,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     padding: 7% 10%;
-    height: 100%;
+    height: inherit;
 }
 
 .header {
@@ -26,20 +27,21 @@ body {
     display: block;
 }
 
-.header-links {
-    font-size: 1.5em;
+.header-links a{
+    color: red;
 }
 
-#resume {
-    float: left;
+.header-links{
+    font-size: 1.4em;
+    margin: .5em 0;
 }
 
-#portfolio {
-    padding-left: 33.33%;
+.main-portfolio {
+    padding: 5%;
 }
 
-#contact {
-    float: right;
+#casimg {
+    margin-left: 5%
 }
 
 a {
@@ -67,3 +69,6 @@ a:hover {
     }
 }
 
+@media (max-width: 767px){
+    
+}

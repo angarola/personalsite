@@ -9,48 +9,55 @@
     <meta name="author" content="">
     <link rel="icon" href="/Users/michaelangarola/Desktop/Personal Site/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/Users/michaelangarola/Desktop/Personal Site/site.css">
+
     <title>Michael Angarola</title>
   </head>
 <body>
 <div class="main" ng-controller="mainController">
   <div class="header">
-    <span class="header-name">Michael Aidan Angarola</span>
+    <a href="#/"><span class="header-name">Michael Aidan Angarola</span><a>
   </div>
-    
-    {{message}}
-  <div class="header-links">
-    <a href="https://drive.google.com/open?id=0B9bg68vL_BAjV3VEMjB0VzBlOVk" id="resume">Resume</a>
-    <a href="#portfolio" id="portfolio">Portfolio</a>
-    <a href="#contact" id="contact">Contact</a>
-  </div>
+
+<div class="header-links">
+         <a href="https://drive.google.com/open?id=0B9bg68vL_BAjV3VEMjB0VzBlOVk" id="resume">Resume</a>
+        <a href="#portfolio" id="portfolio">Portfolio</a>
+       <a href="#contact" id="contact">Contact</a>
+</div>
+
   <div ng-view></div>
 </div>
 
 <script type="text/ng-template" id="/templates/portfolio.html">
+<div class="main-portfolio">
   <a href="healswift.azurewebsites.net"> <img src="/Users/michaelangarola/Desktop/Personal Site/Images/HealSwiftLogo.png"></a>
-  <h3>Freelance Work:</h3>
-  <a href="cristinaangarola.com"><img src="/Users/michaelangarola/Desktop/Personal Site/Images/cashowroomLogo.png"></a>
+  <a href="cristinaangarola.com"><img id="casimg" src="/Users/michaelangarola/Desktop/Personal Site/Images/cashowroomLogo.png"></a>
+</div>
 </script>
 
 <script type="text/ng-template" id="/templates/contact.html">
 fdsfsd
 </script>
 
+<script src="/Users/michaelangarola/Desktop/Personal Site/Scripts/vendor/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 <script src="/Users/michaelangarola/Desktop/Personal Site/Scripts/vendor/angular-route.min.js"></script>
 <script type="text/javascript">
+  (function () {
+            "use strict";
   var app = angular.module("APP", ["ngRoute"]);
     app.config(function($routeProvider) {
     $routeProvider
       .when("/", {
-          templateUrl : "main.html",
           controller : 'mainController'})
-      .when("/Portfolio", {
+      .when("/portfolio", {
           templateUrl : "/templates/portfolio.html"})
+      .when("/contact", {
+          templateUrl : "/templates/contact.html"})
       });
     app.controller('mainController', function($scope){
       $scope.message = "hello world"
     });
+  })();
 </script>
 </body>
 </html>
