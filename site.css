@@ -25,16 +25,14 @@ body {
     text-transform: uppercase;
     text-align: center;
     display: block;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
-
-.header-links a {
-
- }
 
 .header-links{
     font-size: 1.4em;
     margin: .5em 0;
     text-align: center;
+    font-family: 'Karla', sans-serif;
 }
 
 .navBurg {
@@ -102,7 +100,8 @@ li {
     display: block;
     margin: 5px;
     font-size: 1.5em;
-    background-color: #fff
+    background-color: #fff;
+    font-family: 'Karla', sans-serif;
 }
 
 li:nth-child(even) { 
