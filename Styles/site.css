@@ -2,15 +2,21 @@ body {
     background-color: #f3f3f3;
     display: block;
     margin: 0px;
-    height: 95vh;
+    height: 85vh;
 }
 
 .main {
     background-color: white;
     margin-left: 10%;
     margin-right: 10%;
-    padding: 7% 10%;
+    padding: 7% 7% 0 10%;
     height: inherit;
+}
+
+@media (max-width: 767px){
+    .main {
+        padding: 7% 0;
+    }
 }
 
 .header {
@@ -37,6 +43,7 @@ body {
 
 .navBurg {
     display: none;
+    margin-top: 1em;
 }
 
 .icon-bar {
@@ -46,6 +53,7 @@ body {
   border-radius: 1px;
   background-color: black;
   margin-top: 4px;
+  margin-left: 1em;
 }
 
 @media (max-width: 767px){
@@ -77,6 +85,11 @@ a {
   color: inherit;
 }
 
+.main-contact {
+    margin: 5%;
+    text-align: center;
+}
+
 a:link, a:visited {
  border:none;
  text-decoration:none;
@@ -84,7 +97,7 @@ a:link, a:visited {
  color:black;
 }
 
-a:hover {
+a:hover, a:hover .fa span {
  text-decoration: underline;
  color: #bfbfbf;
 }
@@ -106,6 +119,25 @@ li {
 
 li:nth-child(even) { 
     background: #f3f3f3; 
+}
+
+.fa {
+    font-size: 1.5em;
+    margin: 2.5%;
+}
+
+a:hover .fa {
+    text-decoration: none;
+    color: black;
+}
+
+.fa span {
+    font-size: 0.8em;
+    font-family: 'Karla', sans-serif;
+}
+
+a .fa span:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 1015px){

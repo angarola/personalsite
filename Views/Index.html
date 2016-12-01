@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex,nofollow">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Michael Angarola">
+    <meta name="author" content="Michael Angarola">
     <link href="https://fonts.googleapis.com/css?family=Karla|Ubuntu+Condensed" rel="stylesheet">
     <link rel="icon" href="/Users/michaelangarola/Desktop/Personal Site/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/Users/michaelangarola/Desktop/Personal Site/site.css">
+    <script src="https://use.fontawesome.com/6b351ce5e4.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Users/michaelangarola/Desktop/Personal Site/Styles/site.css">
      <!--coded by hand, no bootstrap-->
     <title>Michael Angarola</title>
   </head>
@@ -28,14 +29,14 @@
 <div class="icon-bar"></div>
 <div class="icon-bar"></div>
 <div class="icon-bar"></div>
-</div>
-<nav ng-if="navHide">
+<nav class="ng-cloak" ng-if="navHide">
   <ul>
       <li><a href="https://drive.google.com/open?id=0B9bg68vL_BAjV3VEMjB0VzBlOVk">Resume</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
+</div>
 
   <div ng-view></div>
 </div>
@@ -48,7 +49,12 @@
 </script>
 
 <script type="text/ng-template" id="/templates/contact.html">
-fdsfsd
+<div class="main-contact">
+  <a href="mailto:angarola.michael@gmail.com"><i class="fa fa-envelope" aria-hidden="true"> <span>Email</span></i></a>
+  <a href="https://github.com/angarola"><i class="fa fa-github-square" aria-hidden="true"> <span>GitHub</span></i></a>
+  <a href="https://www.linkedin.com/in/michael-angarola-44934584"><i class="fa fa-linkedin-square" aria-hidden="true"> <span>LinkedIn</span></i></a>
+  <i class="fa fa-phone-square" aria-hidden="true"> <span>(213) 935-0658</span></i>
+</div>
 </script>
 
 <script src="/Users/michaelangarola/Desktop/Personal Site/Scripts/vendor/jquery.js"></script>
