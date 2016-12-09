@@ -56,7 +56,7 @@ body {
   margin-left: 1em;
 }
 
-@media (max-width: 767px){
+@media (max-width: 600px){
  .header-links {
      display: none;
  }
@@ -103,9 +103,8 @@ a:hover, a:hover .fa span {
 }
 
 ul {
-    background-color: #f3f3f3;
-    border-width: 2px;
-    border-color: #f3f3f3;
+    border-width: 2px 0;
+    border-color: #ddd;
     border-style: solid;
 }
 
@@ -113,12 +112,7 @@ li {
     display: block;
     margin: 5px;
     font-size: 1.5em;
-    background-color: #fff;
     font-family: 'Karla', sans-serif;
-}
-
-li:nth-child(even) { 
-    background: #f3f3f3; 
 }
 
 .fa {
