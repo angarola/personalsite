@@ -34,6 +34,10 @@ body {
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+.header a:hover {
+    text-decoration: none;
+}
+
 .header-links{
     font-size: 1.4em;
     margin: .5em 0;
@@ -75,8 +79,14 @@ body {
     padding: 5%;
 }
 
-#casimg {
-    margin-left: 5%
+img {
+    margin: 0 2.5%;
+}
+
+@media (max-width: 600px){
+    img {
+        margin: 2% 20%;   
+    }
 }
 
 a {
